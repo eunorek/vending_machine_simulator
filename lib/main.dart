@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vending_machine_simulator/vending_machine.dart';
 
 import 'extra_info_drawer.dart';
 
@@ -15,7 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.orange,
       ),
-      home: FrontPage()
+      // home: FrontPage(), // Redundant!!!
+      initialRoute: '/',
+      routes: {
+        '/' : (context) => FrontPage(),
+        '/VendingMachineMenu' : (context) => VendingMachineMenu(),
+      },
     );
   }
 }
@@ -28,11 +34,38 @@ class FrontPage extends StatelessWidget {
         title: Text('Front Page'),
       ),
       body: Container(
-        child: Row(
+        child: Column(
+          // column 일때는 세로축을 기준으로 정렬
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Center(
-                child: Text('Hello There!!')
+            Image.asset(
+                'assets/images/misc/damgom.jpg',
+                fit: BoxFit.fitWidth,
             ),
+            Text(
+                'Hello There!!',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold
+                ),
+            ),
+            // 자판기 루트 이동 버튼
+            RaisedButton(
+                color: Colors.red,
+                padding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                child: Text(
+                '시작하기',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white
+                  ),
+                ),
+                onPressed: (){
+                Navigator.of(context).pushNamed('/VendingMachineMenu');
+            }
+            )
           ],
         ),
       ),

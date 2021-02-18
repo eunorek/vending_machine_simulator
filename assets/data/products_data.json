@@ -1,0 +1,79 @@
+[
+    {
+      "id" : "0",
+      "name" : "포카리스웨트",
+      "imgName" : "prod1.jpg",
+      "price" : "800",
+      "stock" : "10"
+    },
+    {
+      "id" : "1",
+      "name" : "컨피던스",
+      "imgName" : "prod2.jpg",
+      "price" : "700",
+      "stock" : "10"
+    },
+    {
+      "id" : "2",
+      "name" : "오란씨",
+      "imgName" : "prod3.jpg",
+      "price" : "700",
+      "stock" : "10"
+    },
+    {
+      "id" : "3",
+      "name" : "데자와",
+      "imgName" : "prod4.jpg",
+      "price" : "600",
+      "stock" : "10"
+    },
+    {
+      "id" : "4",
+      "name" : "데미소다 사과향",
+      "imgName" : "prod5.jpg",
+      "price" : "700",
+      "stock" : "10"
+    },
+    {
+      "id" : "5",
+      "name" : "디&카페",
+      "imgName" : "prod6.jpg",
+      "price" : "900",
+      "stock" : "10"
+    },
+    {
+      "id" : "6",
+      "name" : "나랑드 사이다",
+      "imgName" : "prod7.jpg",
+      "price" : "700",
+      "stock" : "10"
+    },
+    {
+      "id" : "7",
+      "name" : "솔의 눈",
+      "imgName" : "prod8.jpg",
+      "price" : "600",
+      "stock" : "10"
+    },
+    {
+      "id" : "8",
+      "name" : "코카 콜라",
+      "imgName" : "prod9.png",
+      "price" : "800",
+      "stock" : "10"
+    },
+    {
+      "id" : "9",
+      "name" : "닥터 페퍼",
+      "imgName" : "prod10.jpg",
+      "price" : "1000",
+      "stock" : "10"
+    },
+    {
+      "id" : "10",
+      "name" : "지코",
+      "imgName" : "prod11.jpg",
+      "price" : "1200",
+      "stock" : "10"
+    }
+]
